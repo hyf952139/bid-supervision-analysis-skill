@@ -1,0 +1,19 @@
+# 大模型配置
+llm:
+  provider: "tongyi"
+  api_key: "your_api_key_here"
+  model: "qwen-plus"
+
+# 数据路径配置
+data_paths:
+  temp_dir: "./temp"
+  output_dir: "./output"
+
+# 分析参数配置
+analysis_params:
+  similarity_threshold: 0.8
+  price_deviation_threshold: 2.0
+  risk_score_weights:
+    similarity: 0.3
+    pricing: 0.3
+    collusion: 0.4
